@@ -1,0 +1,112 @@
+Original Data:
++-----------+-----+-----+-------+--------------------+---+------+--------------+-----------------+----------------+
+|    Disease|Fever|Cough|Fatigue|Difficulty Breathing|Age|Gender|Blood Pressure|Cholesterol Level|Outcome Variable|
++-----------+-----+-----+-------+--------------------+---+------+--------------+-----------------+----------------+
+|Common Cold|   No|   No|    Yes|                 Yes| 90|Female|           Low|           Normal|        Negative|
+|     Eczema|   No|   No|     No|                  No| 79|Female|           Low|              Low|        Positive|
+|Common Cold|  Yes|   No|    Yes|                  No| 64|Female|        Normal|              Low|        Positive|
+|  Influenza|   No|   No|    Yes|                 Yes| 68|Female|        Normal|           Normal|        Positive|
+|  Influenza|  Yes|  Yes|     No|                  No| 50|  Male|        Normal|             High|        Negative|
+|  Influenza|   No|   No|     No|                 Yes| 10|Female|           Low|              Low|        Positive|
+|     Eczema|   No|  Yes|     No|                  No| 15|  Male|           Low|             High|        Negative|
+|Common Cold|  Yes|  Yes|    Yes|                  No| 87|Female|           Low|           Normal|        Negative|
+|     Eczema|   No|  Yes|     No|                 Yes|  1|  Male|           Low|           Normal|        Positive|
+|     Eczema|  Yes|  Yes|     No|                  No| 65|  Male|           Low|             High|        Negative|
+|     Asthma|   No|  Yes|     No|                  No| 69|  Male|          High|           Normal|        Positive|
+|Common Cold|   No|   No|    Yes|                  No|  8|  Male|        Normal|           Normal|        Negative|
+|Common Cold|  Yes|  Yes|    Yes|                  No| 53|Female|           Low|             High|        Positive|
+|     Eczema|  Yes|  Yes|     No|                 Yes| 75|  Male|          High|           Normal|        Negative|
+|Common Cold|  Yes|  Yes|     No|                 Yes| 93|Female|           Low|           Normal|        Negative|
+|Common Cold|   No|  Yes|     No|                  No| 32|  Male|           Low|              Low|        Positive|
+|     Asthma|  Yes|  Yes|    Yes|                  No| 32|Female|           Low|             High|        Negative|
+|Common Cold|  Yes|  Yes|     No|                 Yes| 89|  Male|        Normal|           Normal|        Positive|
+|Common Cold|  Yes|  Yes|    Yes|                 Yes| 58|  Male|           Low|           Normal|        Negative|
+|     Asthma|  Yes|   No|     No|                  No| 54|  Male|        Normal|              Low|        Negative|
++-----------+-----+-----+-------+--------------------+---+------+--------------+-----------------+----------------+
+only showing top 20 rows
+
+Preprocessed Data:
++-----------+-----+-----+-------+--------------------+------+--------------+-----------------+----------------+--------------------+
+|    Disease|Fever|Cough|Fatigue|Difficulty Breathing|Gender|Blood Pressure|Cholesterol Level|Outcome Variable|          Age_Scaled|
++-----------+-----+-----+-------+--------------------+------+--------------+-----------------+----------------+--------------------+
+|Common Cold|    0|    0|      1|                   1|     0|             0|                0|               0|[0.8989898989898991]|
+|     Eczema|    0|    0|      0|                   0|     0|             0|                1|               1| [0.787878787878788]|
+|Common Cold|    1|    0|      1|                   0|     0|             1|                1|               1|[0.6363636363636365]|
+|  Influenza|    0|    0|      1|                   1|     0|             1|                0|               1|[0.6767676767676768]|
+|  Influenza|    1|    1|      0|                   0|     1|             1|                1|               0| [0.494949494949495]|
+|  Influenza|    0|    0|      0|                   1|     0|             0|                1|               1|[0.09090909090909...|
+|     Eczema|    0|    1|      0|                   0|     1|             0|                1|               0|[0.14141414141414...|
+|Common Cold|    1|    1|      1|                   0|     0|             0|                0|               0|[0.8686868686868687]|
+|     Eczema|    0|    1|      0|                   1|     1|             0|                0|               1|               [0.0]|
+|     Eczema|    1|    1|      0|                   0|     1|             0|                1|               0|[0.6464646464646465]|
+|     Asthma|    0|    1|      0|                   0|     1|             2|                0|               1| [0.686868686868687]|
+|Common Cold|    0|    0|      1|                   0|     1|             1|                0|               0|[0.07070707070707...|
+|Common Cold|    1|    1|      1|                   0|     0|             0|                1|               1|[0.5252525252525253]|
+|     Eczema|    1|    1|      0|                   1|     1|             2|                0|               0|[0.7474747474747475]|
+|Common Cold|    1|    1|      0|                   1|     0|             0|                0|               0|[0.9292929292929294]|
+|Common Cold|    0|    1|      0|                   0|     1|             0|                1|               1|[0.31313131313131...|
+|     Asthma|    1|    1|      1|                   0|     0|             0|                1|               0|[0.31313131313131...|
+|Common Cold|    1|    1|      0|                   1|     1|             1|                0|               1| [0.888888888888889]|
+|Common Cold|    1|    1|      1|                   1|     1|             0|                0|               0|[0.5757575757575758]|
+|     Asthma|    1|    0|      0|                   0|     1|             1|                1|               0|[0.5353535353535354]|
++-----------+-----+-----+-------+--------------------+------+--------------+-----------------+----------------+--------------------+
+only showing top 20 rows
+
+Training Random Forest (Tuned)...
++----------------+----------+------+
+|Outcome Variable|prediction| count|
++----------------+----------+------+
+|               1|       0.0|108796|
+|               0|       0.0|108868|
+|               1|       1.0| 91086|
+|               0|       1.0| 90949|
++----------------+----------+------+
+
+Random Forest (Tuned) - Accuracy: 0.5003, AUC: 0.4996, Precision: 0.5003, Recall: 0.5003, F1-Score: 0.4993
+Training Decision Tree (Tuned)...
++----------------+----------+------+
+|Outcome Variable|prediction| count|
++----------------+----------+------+
+|               1|       0.0|120185|
+|               0|       0.0|119784|
+|               1|       1.0| 79697|
+|               0|       1.0| 80033|
++----------------+----------+------+
+
+Decision Tree (Tuned) - Accuracy: 0.4991, AUC: 0.5009, Precision: 0.4991, Recall: 0.4991, F1-Score: 0.4940
+Training Naive Bayes...
++----------------+----------+------+
+|Outcome Variable|prediction| count|
++----------------+----------+------+
+|               1|       0.0|158749|
+|               0|       0.0|158643|
+|               1|       1.0| 41133|
+|               0|       1.0| 41174|
++----------------+----------+------+
+
+Naive Bayes - Accuracy: 0.4998, AUC: 0.4997, Precision: 0.4998, Recall: 0.4998, F1-Score: 0.4525
+Training Gradient Boosting (Tuned)...
++----------------+----------+------+
+|Outcome Variable|prediction| count|
++----------------+----------+------+
+|               1|       0.0|102285|
+|               0|       0.0|101333|
+|               1|       1.0| 97597|
+|               0|       1.0| 98484|
++----------------+----------+------+
+
+Gradient Boosting (Tuned) - Accuracy: 0.4977, AUC: 0.4981, Precision: 0.4977, Recall: 0.4977, F1-Score: 0.4977
+
+Enter your symptoms and details for prediction:
+Executing model: Random Forest (Tuned)
+
+Random Forest (Tuned) Model Prediction: Common Cold (Probability: [0.49222198507258846,0.5077780149274116])
+Executing model: Decision Tree (Tuned)
+
+Decision Tree (Tuned) Model Prediction: Common Cold (Probability: [0.4996510494314957,0.5003489505685043])
+Executing model: Naive Bayes
+
+Naive Bayes Model Prediction: Influenza (Probability: [0.5002852628801632,0.499714737119837])
+Executing model: Gradient Boosting (Tuned)
+
+Gradient Boosting (Tuned) Model Prediction: Common Cold (Probability: [0.45282806021980965,0.5471719397801904])
