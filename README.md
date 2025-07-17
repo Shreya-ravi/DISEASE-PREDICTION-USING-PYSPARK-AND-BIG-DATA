@@ -21,8 +21,11 @@ Based on the input symptoms and the predictions from the models, the most common
 * 📊 Platform-Wise Click Tracking
 Real-time analytics showing total clicks and platform-specific click stats through all model.
 
+
 * 📱 Can be Shared
 Data shown can be shared and secured
+
+
 
 
 
@@ -35,9 +38,12 @@ Data shown can be shared and secured
 
 
 # Summary 
+
 1.Shows the data for various diseases.
 
+
 <img width="663" height="343" alt="image" src="https://github.com/user-attachments/assets/0c735651-e138-496c-87ac-84f3e1c91c0a" />
+
 <img width="670" height="316" alt="image" src="https://github.com/user-attachments/assets/846fc393-171a-4dda-8f13-0e466331ffe6" />
 
 2.In Random Forest
@@ -45,12 +51,19 @@ Data shown can be shared and secured
 
 <img width="666" height="291" alt="image" src="https://github.com/user-attachments/assets/ac6195ad-68ba-4840-8074-dc9a1664647b" />
 
+
+
 3. Decision Tree & Naive Bayes.
 
 
    <img width="669" height="238" alt="image" src="https://github.com/user-attachments/assets/615aee10-dce2-4722-b4a3-9b8db387664a" />
 
+
+
 Final
+
+
+
 
 <img width="790" height="180" alt="image" src="https://github.com/user-attachments/assets/11a69ea5-5a40-48e3-9ab5-032a3c595c4c" />
 
@@ -58,4 +71,5 @@ Final
 
 
 # Getting Started 
+
 ⦁	Spark version 3.5.3 and Python 3.10.12 are active, with the Web UI accessible at http://10.70.6.211:4040.
