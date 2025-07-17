@@ -39,5 +39,5 @@ Final
 
 
 
-Getting Started 
+# Getting Started 
 ⦁	Spark version 3.5.3 and Python 3.10.12 are active, with the Web UI accessible at http://10.70.6.211:4040.
