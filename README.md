@@ -1,4 +1,4 @@
-DISEASE PREDICTION USING PYSPARK AND BIG DATA
+# DISEASE PREDICTION USING PYSPARK AND BIG DATA
 
 Purpose and Goals of the Project
 The primary objective of this project is to develop a disease prediction system that integrates machine learning algorithms with Big Data technologies. By using PySpark to analyze symptoms and patient profiles, the system aims to provide healthcare professionals with timely and accurate predictions, ultimately enhancing patient care.
