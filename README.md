@@ -12,6 +12,8 @@ Random Forest: High reliability due to ensemble learning.
 Decision Tree: Useful for categorical health data.
 Naive Bayes: Effective for probabilistic classifications.
 Gradient Boosting: Excels in complex data scenarios due to iterative refinement.
+# Features 
+* Tracks all symptoms through all models  
 
 
 Based on the input symptoms and the predictions from the models, the most common diagnosis is Common Cold, according to the Random Forest, Decision Tree, and Gradient Boosting models, while the Naive Bayes model predicts Influenza
